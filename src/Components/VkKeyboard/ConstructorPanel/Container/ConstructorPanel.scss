@@ -1,0 +1,55 @@
+.border {
+    background-color: #fff;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    padding: 16px 16px 8px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    width: 366px;
+}
+
+.buttons-main {
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.buttons-main label {
+    font-weight: 600;
+    margin: 0 0 6px;
+}
+
+.note {
+    color: #586069;
+    font-size: 12px;
+    margin: 4px 0 2px;
+    min-height: 17px;
+}
+
+.block-item {
+    margin-bottom: 16px;
+}
+
+.one-time,
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+}
+
+.button-add,
+.button-remove {
+    margin: 5px auto;
+    line-height: 38px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    max-width: 200px;
+    user-select: none;
+}

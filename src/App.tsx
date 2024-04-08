@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { ChangeEvent, useState } from 'react';
 import './App.css';
+import VkKeyboard from './Components/VkKeyboard';
 
 function App() {
+  const [value, setValue] = useState("");
+  const onChange = (event : ChangeEvent<HTMLTextAreaElement>) => setValue(event.target.value);
+  const onChangeKeyboard = (data: any) => {
+    setValue(data);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'flex', flexDirection: 'column', margin: '10px' }}>
+    <VkKeyboard keyboardJson={value} onChangeVkKeyboard={onChangeKeyboard}/>
+   </div>
+   <div style={{ display: 'flex', flexDirection: 'column', margin: '10px' }}>
+      <textarea rows={15} cols={100} value={value || ""} onChange={onChange}></textarea>
     </div>
+   </div>
   );
 }
 

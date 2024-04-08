@@ -1,0 +1,101 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    width: 100%;
+    height: 38px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, Noto Sans Armenian, Noto Sans Bengali, Noto Sans Cherokee, Noto Sans Devanagari, Noto Sans Ethiopic, Noto Sans Georgian, Noto Sans Hebrew, Noto Sans Kannada, Noto Sans Khmer, Noto Sans Lao, Noto Sans Osmanya, Noto Sans Tamil, Noto Sans Telugu, Noto Sans Thai, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0 12px;
+}
+
+.button span {
+    display: inline-block;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+.button svg {
+    height: 24px;
+    margin: 0 4px 0 2px;
+}
+
+.bold span {
+    font-weight: 500;
+}
+
+.bold.secondary span {
+    color: #3670b3;
+}
+
+.select {
+    background: repeating-linear-gradient(45deg, #0000, #0000 15px, #fff6 0, #fff6 30px);
+}
+
+.add {
+    border: 1px solid #d1d5da;
+}
+
+.primary {
+    background-color: #5181b8;
+    color: #fff;
+}
+
+.primary:hover {
+    background-color: #5b88bd;
+}
+
+.primary:active {
+    background-color: #4872a3;
+}
+
+.secondary {
+    background-color: #e5ebf1;
+    color: #55677d;
+}
+
+.secondary:hover {
+    background-color: #dfe6ed;
+}
+
+.secondary:active {
+    background-color: #dae2ea;
+}
+
+.negative {
+    background-color: #e64646;
+    color: #fff;
+}
+
+.negative:hover {
+    background-color: #eb5050;
+}
+
+.negative:active {
+    background-color: #db3b3b;
+}
+
+.positive {
+    background-color: #4bb34b;
+    color: #fff;
+}
+
+.positive:hover {
+    background-color: #51b851;
+}
+
+.positive:active {
+    background-color: #43a843;
+}
